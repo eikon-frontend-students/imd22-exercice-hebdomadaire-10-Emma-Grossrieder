@@ -4,11 +4,82 @@
   padding: 0;
 }
 
-a {
-  color: inherit;
+body {
+  font-family: Arial, sans-serif;
+  background-color: #cfdcf8;
+  display: flex;
+margin: 100px;
 }
 
-img,
-video {
-  display: block;
+.player {
+  background-color: white;
+  width: 420px;
+  padding: 40px 30px;
+  border-radius: 25px;
+  text-align: center;
+  box-shadow: 0 0 0 18px rgba(255, 255, 255, 0.35);
+}
+
+.player-header {
+  margin-bottom: 25px;
+}
+
+.player-track-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+.player-track-artist {
+  font-size: 14px;
+  color: #9a9a9a;
+}
+
+.player-progress {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 35px;
+}
+
+.player-time {
+  font-size: 13px;
+  color: #8a8a8a;
+  width: 40px;
+}
+
+.player-progress-bar {
+  flex: 1;
+  height: 6px;
+  background-color: #f2f0e8;
+  border-radius: 3px;
+}
+
+.player-progress-inner {
+  width: 40%;
+  height: 100%;
+  background-color: #f08bbd;
+  border-radius: 3px;
+}
+
+.player-button {
+  width: 80px;
+  height: 80px;
+  background-color: #f08bbd;
+  border-radius: 50%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px;
+  color: white;
+  cursor: pointer;
+}
+
+.player-button.pause {
+  display: none;
+}
+
+audio {
+  display: none;
 }
